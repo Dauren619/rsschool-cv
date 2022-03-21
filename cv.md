@@ -3,7 +3,7 @@
 ## Junior Frontend Developer
 __________________________
 ### Contact Information:
-#### **Phone:** +77076905070
+#### **Phone:** +77076905068
 #### **E-Mail:** frostrage108@gmail.com
 
 ### Skills:
