@@ -1,0 +1,336 @@
+body {font-family: 'montserrat', sans-serif;
+margin: 0;
+font-size: 15px;
+line-height: 1.6;
+color: rgb(255, 255, 255);}
+*{box-sizing: border-box;}
+*:before,
+*:after{box-sizing: border-box;}
+
+h1, h2, h3, h4, h5, h6 {margin: 0;
+}
+
+hr {
+    border: 0;
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 40px 0;
+    background-color: #999;
+}
+
+/*Container */
+
+.container {width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/*Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+height: 100vh;
+background: url("../img/intro.jpg")
+center no-repeat;
+background-size: cover;}
+
+.intro__title  {font-size: 125px;
+font-weight: 600;
+text-transform: uppercase;
+text-align: center;
+line-height: 1;}
+
+.intro__title::after {content: "";
+    display: block;
+width: 60px;
+height: 3px;
+background-color: #fff;
+margin: 60px auto;
+}
+
+.intro__suptitle {font-size: 69px;
+font-family: 'Kaushan Script', cursive;
+text-align: center;
+margin-bottom: 20px;}
+
+.intro__inner {width: 100%;
+max-width: 940px;
+margin: 0 auto;
+text-align: center;}
+
+/*Header */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.nav__link::after
+{content: "";
+display:block;
+width: 100%;
+height: 3px;
+opacity: 0;
+background-color: #dcff3e;
+top: 100%;
+left: 0;
+z-index: 1;
+transition: .1s linear;}
+
+.nav__link:hover
+{
+    color: #dcff3e;
+}
+
+.nav__link:hover:after,
+.nav__link:active.active {opacity: 1;}
+
+.nav__link.active {color: #dcff3e;
+
+}
+
+/*Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background .1s linear; color: .1s linear
+;
+}
+
+.btn:hover {background-color:#fff ;
+color: #000000;}
+
+/*Slider */
+
+.slider {width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__inner {display: flex;
+justify-content: space-between;}
+
+.slider__item {
+    width: 24%;
+    padding: 20px 0;
+    border-top: 3px solid;
+    position: relative;
+    font-size: 18px;
+    text-transform: uppercase;
+    opacity: .7;
+}
+
+.slider__item.active
+{
+    opacity: 1;
+}
+
+.slider__item.active::before
+{content: "";
+display: block;
+width: 70px;
+height: 3px;
+position: absolute;
+background-color: #dcff3e;
+top: -3px;
+left: 0;
+z-index: 1;}
+
+.slider__num {
+font-size: 24px;
+font-weight: 700;
+}
+
+/* Section */
+.section {padding: 80px 0;}
+
+.section__header {margin: 0 auto 40px;
+    width: 100%;
+    min-width: 950px;
+color: #000000;
+text-align: center;}
+
+.section__suptitle {font-family: 'Kaushan Script', cursive;
+font-size: 24px;}
+
+.section__title {font-size: 30px;
+font-weight: 700;}
+
+.section__title::after
+{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000000;
+    margin: 30px auto 40px;
+}
+
+.section__text {color: #999;
+font-size: 16px;}
+
+/* about */
+.about {
+display: flex;
+justify-content: space-between;
+}
+
+.about__item {width: 21%;
+}
+
+.about__item:hover .about__img {transform:translate3d(-10px, -10px, 0) ;}
+
+.about__item:hover .about__img img {opacity: .7;
+
+}
+
+.about__img { background: linear-gradient(to bottom, #000, #fffb00);
+    transition: transform .2s linear ;
+}
+
+.about__img img {display: block;
+    transition: opacity .1s linear;}
+
+/* stats */
+
+.stats {background-color: #ffee01;
+
+}
+
+.stat {display: flex;}
+
+.stat__item {flex: 1 1 0;
+border-left: 1px solid #8b8202;
+text-align: center;
+color: #000;
+padding: 70px 25px;}
+
+.stat__count {font-size: 72px;
+font-weight: 700;
+line-height: 1;
+margin-bottom: 10px;
+}
+
+.stat__text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.stat__item:last-child {
+border-right: 1px solid #8b8202;
+}
+
+/* Services */
+
+.services {
+    display: flex;
+}
+
+.services__title {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-right: 35px;
+}
+
+.services__text {
+    text-align: left;
+    font-size: 15px;
+    color: #999;
+}
+
+.services__item {
+    flex: 1 1 0;
+    padding-left: 70px;
+    position: relative;
+}
+
+
+.services__icon {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    z-index: 1;
+}
+
+/* for Samsung Laptop */
+
+@media (max-width:1366px) {
+    
+.intro__title {
+    font-size: 56px;
+}
+.intro__suptitle {
+    font-size: 28px;
+}
+.btn {
+    padding: 4px 15px;
+    font-size: 10px;
+}
+
+.slider__item {
+    width: 20%;
+    padding: 10px 0;
+    border-top: 3px solid;
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: .7;
+}
+
+.slider__num {
+font-size: 16px;
+font-weight: 700;
+}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
