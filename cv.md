@@ -8,7 +8,7 @@ __________________________
 
 ### Skills:
 - VS Code
-- Figma, Adobe Photoshop
+- Figma, Adobe Photoshop, Notepad++
 
 ### Languages:
 - English - Upper Intermediate
